@@ -558,6 +558,8 @@ document.getElementById("envelope-button").addEventListener("click", ()=>{
   const envelope = document.getElementById("envelope");
   const screen = document.getElementById("envelope-screen");
   const main = document.getElementById("main-content");
+  audio.play().catch(()=>{});
+  document.getElementById("music-button").classList.add("playing");
   envelope.classList.add("opened");
   setTimeout(()=>{
     screen.classList.add("hidden");
@@ -716,4 +718,4 @@ requestAnimationFrame(drawParticles);
 requestAnimationFrame(drawConfetti);
 </script>
 </body>
-</html>
+         </html>
